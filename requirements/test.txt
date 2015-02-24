@@ -1,0 +1,6 @@
+# Test dependencies go here.
+-r base.txt
+-r local.txt
+-r production.txt
+coverage==3.7.1
+flake8==2.3.0
