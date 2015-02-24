@@ -96,11 +96,17 @@ def pull_env():
         sudo("git reset --hard origin/master")
 
 
+def add_uwsgi_env_variables():
+
+    sudo("cat /var/www/gamealerts/gamealerts-private/env/prod | sed 's/export/env =/' >> /var/www/gamealerts/config/uwsgi.ini")
+
+
 def deploy():
     pull_env()
     pull_changes()
     install_requirements()
     database_setup()
     collect_static()
+    add_uwsgi_env_variables()
     set_permissions()
     restart_services()
