@@ -82,14 +82,14 @@ class Production(Common):
     # END STORAGE CONFIGURATION
 
     # EMAIL
-    DEFAULT_FROM_EMAIL = values.Value('gamealerts.io <noreply@www.gamealerts.io>')
-    EMAIL_HOST = values.Value()
-    EMAIL_HOST_PASSWORD = values.SecretValue()
-    EMAIL_HOST_USER = values.SecretValue()
-    EMAIL_PORT = values.IntegerValue()
-    EMAIL_SUBJECT_PREFIX = values.Value()
-    EMAIL_USE_TLS = True
-    SERVER_EMAIL = EMAIL_HOST_USER
+    #DEFAULT_FROM_EMAIL = values.Value('gamealerts.io <noreply@www.gamealerts.io>')
+    #EMAIL_HOST = values.Value()
+    #EMAIL_HOST_PASSWORD = values.SecretValue()
+    #EMAIL_HOST_USER = values.SecretValue()
+    #EMAIL_PORT = values.IntegerValue()
+    #EMAIL_SUBJECT_PREFIX = values.Value()
+    #EMAIL_USE_TLS = True
+    #SERVER_EMAIL = EMAIL_HOST_USER
     # END EMAIL
 
     # TEMPLATE CONFIGURATION
