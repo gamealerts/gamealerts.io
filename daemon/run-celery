@@ -1,0 +1,2 @@
+#!/bin/bash -e
+source /var/www/gamealerts/gamealerts-private/env/prod && /var/www/gamealerts/.venv/gamealerts/bin/python /var/www/gamealerts/django/gamealerts.io/manage.py celeryd --beat --events --loglevel=INFO --logfile=/var/www/gamealerts/logs/celery.log --time-limit=7200

@@ -262,3 +262,10 @@ class Common(Configuration):
         cls.DATABASES['default']['ATOMIC_REQUESTS'] = True
 
         # Your common stuff: Below this line define 3rd party library settings
+
+    #CELERY
+    import djcelery
+    djcelery.setup_loader()
+    INSTALLED_APPS += ('djcelery', )
+    CELERYBEAT_SCHEDULER = "djcelery.schedulers.DatabaseScheduler"
+    BROKER_URL = values.SecretValue()

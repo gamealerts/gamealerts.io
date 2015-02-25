@@ -42,3 +42,4 @@ class Local(Common):
     # end django-debug-toolbar
 
     # Your local stuff: Below this line define 3rd party library settings
+    #INSTALLED_APPS = ('kombu.transport.django', )
