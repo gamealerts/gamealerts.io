@@ -102,8 +102,4 @@ class Production(Common):
     )
     # END TEMPLATE CONFIGURATION
 
-    # CACHING
-    CACHES = values.CacheURLValue(environ_prefix="DJANGO")
-    # END CACHING
-
     # Your production stuff: Below this line define 3rd party library settings
