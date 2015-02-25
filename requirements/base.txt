@@ -37,4 +37,4 @@ pytz==2014.10
 
 # Your custom requirements go here
 fabric
-pylibmc
+pylibmc==1.4.1
