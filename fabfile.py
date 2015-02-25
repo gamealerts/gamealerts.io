@@ -15,8 +15,9 @@ def _get_public_dns(region, key, value="*"):
     reservations = connection.get_all_instances(filters={key: value})
     for reservation in reservations:
         for instance in reservation.instances:
-            print "Instance", instance.public_dns_name
-            public_dns.append(str(instance.public_dns_name))
+            if instance.public_dns_name != "":
+                print "Instance", instance.public_dns_name
+                public_dns.append(str(instance.public_dns_name))
     return public_dns
 
 
@@ -67,11 +68,14 @@ def collect_static():
 
 
 def set_permissions():
-    sudo("touch nginx.nginx /var/www/gamealerts/logs/django.log")
-    sudo("touch nginx.nginx /var/www/gamealerts/logs/celery.log")
+    sudo("touch /var/www/gamealerts/logs/django.log")
+    sudo("touch /var/www/gamealerts/logs/celery.log")
 
     sudo("chown nginx.nginx /var/www/gamealerts/logs/django.log")
     sudo("chmod g+w /var/www/gamealerts/logs/django.log")
+
+    sudo("chown nginx.nginx /var/www/gamealerts/logs/uwsgi.log")
+    sudo("chmod g+w /var/www/gamealerts/logs/uwsgi.log")
 
     sudo("chown nginx.nginx /var/www/gamealerts/logs/celery.log")
     sudo("chmod g+w /var/www/gamealerts/logs/celery.log")
