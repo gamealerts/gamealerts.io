@@ -37,6 +37,7 @@
       <div class="container">
         <a class="navbar-brand" href="/">gamealerts.io</a>
         <ul class="nav navbar-nav">
+        {% comment %}
           <li class="active"><a href="{% url 'home' %}">Home</a></li>
           <li><a href="{% url 'about' %}">About</a></li>
 
@@ -47,6 +48,7 @@
             <li><a href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a></li>
             <li><a href="{% url 'account_login' %}">{% trans "Log In" %}</a></li>
           {% endif %}
+          {% endcomment %}
         </ul>
       </div>
     </div>
