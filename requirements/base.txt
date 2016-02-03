@@ -13,7 +13,7 @@ django-crispy-forms==1.4.0
 django-floppyforms==1.6.1
 
 # Models
-django-model-utils==2.2
+django-model-utils==2.4
 
 # Images
 Pillow==3.0.0
