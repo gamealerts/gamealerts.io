@@ -37,6 +37,6 @@ pytz==2015.7
 
 # Your custom requirements go here
 fabric==1.10.2
-pylibmc==1.4.1
+pylibmc==1.5.0
 django-celery
 django-redis
