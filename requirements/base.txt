@@ -8,7 +8,7 @@ django-cache-url==1.0.0
 dj-database-url==0.3.0
 
 # Forms
-django-braces==1.4.0
+django-braces==1.8.1
 django-crispy-forms==1.5.2
 django-floppyforms==1.6.1
 
