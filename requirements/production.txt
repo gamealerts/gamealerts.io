@@ -3,7 +3,7 @@
 -r base.txt
 
 django-storages==1.1.8
-Collectfast==0.2.1
+Collectfast==0.5.1
 gevent==1.0.1
 boto==2.36.0
 djrill
