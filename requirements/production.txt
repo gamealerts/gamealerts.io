@@ -2,7 +2,7 @@
 #	production that isn't in development.
 -r base.txt
 
-django-storages==1.1.8
+django-storages==1.5.2
 Collectfast==0.2.1
 gevent==1.0.1
 boto==2.36.0
