@@ -1,7 +1,7 @@
 # Test dependencies go here.
 -r production.txt
 
-coverage==3.7.1
+coverage==4.3.4
 Sphinx
 django-extensions==1.5.0
 Werkzeug==0.10.1
