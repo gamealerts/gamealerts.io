@@ -33,7 +33,7 @@ django-autoslug==1.7.2
 django-avatar==2.0
 
 # Time zones support
-pytz==2014.10
+pytz==2016.10
 
 # Your custom requirements go here
 fabric
